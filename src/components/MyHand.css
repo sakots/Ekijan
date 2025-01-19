@@ -1,5 +1,6 @@
 button.card {
   position: relative;
+  top: 2rem;
   display: inline-block;
   font-size: 1rem;
   text-align: center;
