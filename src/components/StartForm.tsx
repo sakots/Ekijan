@@ -1,15 +1,11 @@
-import dataset from '../dataset.json';
-
-const startForm = () => {
-  const getWallData = async(e: React.FormEvent<HTMLFormElement>) => {
+const startForm = (props: { getIsStarted: (arg0: boolean) => void; }) => {
+  const getIsStarted = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const allTiles = dataset.tiles;
-    const wall = allTiles.toSorted(() => Math.random() - Math.random());
-    console.log(wall);
+    props.getIsStarted(true);
   }
 
   return (
-    <form onSubmit={getWallData}>
+    <form onSubmit={getIsStarted}>
       <button type="submit">スタート</button>
     </form>
   )
