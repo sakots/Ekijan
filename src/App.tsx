@@ -1,9 +1,9 @@
-import "./App.css";
 import StartForm from "./components/StartForm";
 import Doras from "./components/Doras";
 import MyHand from "./components/MyHand";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <>
       <h1>駅雀 2025</h1>

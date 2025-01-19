@@ -7,10 +7,11 @@ const startForm = () => {
     const wall = allTiles.toSorted(() => Math.random() - Math.random());
     console.log(wall);
   }
+
   return (
-      <form onSubmit={getWallData}>
-          <button type="submit">スタート</button>
-      </form>
+    <form onSubmit={getWallData}>
+      <button type="submit">スタート</button>
+    </form>
   )
 }
 
