@@ -1,6 +1,6 @@
 const Doras = () => {
   return (
-    <div>
+    <div className='doras'>
       <h2>ドラ</h2>
     </div>
   );
