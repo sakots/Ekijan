@@ -1,10 +1,10 @@
-import "./MyHand.css"
+import "./Tiles.css"
 
 const MyHand = () => {
   return (
     <>
-      <div className="cards">
-        <button type="submit" className="card"><span className="s">南</span>浦和</button>
+      <div className="hand">
+        <button type="submit" className="tile">南浦和</button>
       </div>
     </>
   )
