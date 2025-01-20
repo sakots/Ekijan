@@ -2,16 +2,13 @@ import Doras from "./Doras";
 import MyHand from "./MyHand";
 import Discarded from "./Discarded";
 import StartForm from "./StartForm";
-import { useState, useContext } from "react";
-import Wall from "./Wall";
+import { useState } from "react";
 
 const Table = () => {
   const [isStarted, setIsStarted] = useState(false);
   const getIsStarted = () => {
     setIsStarted(true);
   };
-  const wall = useContext(Wall);
-  console.log(wall);
 
   return (
     <>
