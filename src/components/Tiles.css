@@ -1,4 +1,4 @@
-.doras {
+.dora {
   & button {
     display: inline-block;
     position: relative;
@@ -15,11 +15,14 @@
     background: rgb(223, 149, 122);
     color: rgb(223, 149, 122);
   }
-  & :first-child {
+  & > button:first-child {
     font-size: 1rem;
     background-color: rgb(240,240,240);
     color: black;
     box-shadow: 0 -0.5rem rgb(200,200,200), 0 -1rem rgb(219, 137, 107);
+    & > span {
+      color: red;
+    }
   }
 }
 
@@ -41,6 +44,9 @@
     background-color: rgb(240,240,240);
     color: black;
     box-shadow: 0 -0.5rem rgb(200,200,200), 0 -1rem rgb(219, 137, 107);
+    & span {
+      color: red;
+    }
   }
   & button:hover {
     top: -1rem;
