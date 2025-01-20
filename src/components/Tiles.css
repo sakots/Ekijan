@@ -25,7 +25,7 @@
 
 .hand {
   position: relative;
-  top: 2rem;
+  top: 3rem;
   & button {
     display: inline-block;
     position: relative;
@@ -41,5 +41,8 @@
     background-color: rgb(240,240,240);
     color: black;
     box-shadow: 0 -0.5rem rgb(200,200,200), 0 -1rem rgb(219, 137, 107);
+  }
+  & button:hover {
+    top: -1rem;
   }
 }
