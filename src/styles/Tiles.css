@@ -53,4 +53,7 @@
   & button:hover {
     top: -1rem;
   }
+  & button:last-child {
+    margin-left: 1rem;
+  }
 }
