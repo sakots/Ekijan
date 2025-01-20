@@ -22,6 +22,7 @@
     box-shadow: 0 -0.5rem rgb(200,200,200), 0 -1rem rgb(219, 137, 107);
     & > span {
       color: red;
+      font-weight: bold;
     }
   }
 }
@@ -46,6 +47,7 @@
     box-shadow: 0 -0.5rem rgb(200,200,200), 0 -1rem rgb(219, 137, 107);
     & span {
       color: red;
+      font-weight: bold;
     }
   }
   & button:hover {
