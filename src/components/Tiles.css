@@ -1,0 +1,45 @@
+.doras {
+  & button {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    width: 5rem;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    writing-mode: vertical-rl;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5%;
+    box-shadow: 0 -0.5rem rgb(219, 137, 107), 0 -1rem rgb(200, 200, 200);
+    background: rgb(223, 149, 122);
+    color: rgb(223, 149, 122);
+  }
+  & :first-child {
+    font-size: 1rem;
+    background-color: rgb(240,240,240);
+    color: black;
+    box-shadow: 0 -0.5rem rgb(200,200,200), 0 -1rem rgb(219, 137, 107);
+  }
+}
+
+.hand {
+  position: relative;
+  top: 2rem;
+  & button {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    width: 5rem;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    writing-mode: vertical-rl;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5%;
+    background-color: rgb(240,240,240);
+    color: black;
+    box-shadow: 0 -0.5rem rgb(200,200,200), 0 -1rem rgb(219, 137, 107);
+  }
+}
