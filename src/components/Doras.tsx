@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Wall from "./Wall";
-import "./Tiles.css";
+import "../styles/Tiles.css";
 
 const Doras = () => {
   const wall = useContext(Wall);
