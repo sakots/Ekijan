@@ -8,7 +8,7 @@ const MyHand = () => {
   const sortedHand = hand.sort((a, b) => a.id - b.id);
   console.log(sortedHand);
   const sortedHandList = sortedHand.map((sortedHand) => (
-    <button type="button" key={sortedHand.id} className="tile" title={sortedHand.name} dangerouslySetInnerHTML={{ __html: sortedHand.name }}></button>
+    <button type="button" key={sortedHand.id} className="tile" title={sortedHand.name} dangerouslySetInnerHTML={{ __html: sortedHand.display }}></button>
   ));
   return (
     <>
