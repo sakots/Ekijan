@@ -6,16 +6,15 @@ const Doras = () => {
   const wall = useContext(Wall);
   console.log(wall);
   const dora = wall.slice(-5);
-  console.log(dora);
   const doraList = dora.map((dora) => (
-    <button type="button" key={dora.id} className="tile">
-      {dora.name}
-    </button>
+    <button type="button" key={dora.id} className="tile" title={dora.name} dangerouslySetInnerHTML={{ __html: dora.name }}></button>
   ));
   return (
-    <div className="doras">
-      {doraList}
-    </div>
+    <>
+      <div className="dora">
+        {doraList}
+      </div>
+    </>
   );
 };
 
