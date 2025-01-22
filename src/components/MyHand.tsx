@@ -8,7 +8,7 @@ const MyHand = () => {
   const sortedHand = hand.sort((a, b) => a.id - b.id);
   const draw = wall.slice(13,14);
   console.log(draw);
-  const drawList = draw.map((draw) => (
+  const drawTile = draw.map((draw) => (
     <button type="button" key={draw.id} className="tile" title={draw.name} dangerouslySetInnerHTML={{ __html: draw.display }}></button>
   ));
   console.log(sortedHand);
@@ -19,7 +19,7 @@ const MyHand = () => {
     <>
       <div className="hand">
         {sortedHandList}
-        {drawList}
+        {drawTile}
       </div>
     </>
   )
