@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Wall from "./Wall";
 import "../styles/Tiles.css";
 
-const MyHand = () => {
+const FirstHand = () => {
   const wall = useContext(Wall);
   const hand = wall.slice(0,13);
   const sortedHand = hand.sort((a, b) => a.id - b.id);
@@ -26,4 +26,4 @@ const MyHand = () => {
   )
 }
 
-export default MyHand
+export default FirstHand

@@ -1,20 +1,20 @@
 import Doras from "./Doras";
-import MyHand from "./MyHand";
+import FirstHand from "./FirstHand";
 import Discarded from "./Discarded";
 import StartForm from "./StartForm";
 import { useState } from "react";
 
 const Table = () => {
-  const [isStarted, setIsStarted] = useState(false);
+  const [isStarted, setIsStarted] = useState(0);
   const getIsStarted = () => {
-    setIsStarted(true);
+    setIsStarted(14);
   };
 
   return (
     <>
       {isStarted ? <Doras /> : <StartForm getIsStarted={getIsStarted} />}
-      {isStarted && <Discarded />}
-      {isStarted && <MyHand />}
+      {isStarted ? <Discarded /> : null}
+      {isStarted ? <FirstHand /> : null}
     </>
   );
 };
