@@ -1,7 +1,7 @@
 const Discarded = () => {
   return (
     <>
-      <div className="discardedCards">
+      <div className="discardedTiles">
       </div>
     </>
   )
