@@ -4,7 +4,6 @@ import "../styles/Tiles.css";
 
 const Doras = () => {
   const wall = useContext(Wall);
-  console.log(wall);
   const dora = wall.slice(-10, -5);
   const doraList = dora.map((dora) => (
     <button type="button" key={dora.id} className="tile" title="ドラ" dangerouslySetInnerHTML={{ __html: dora.display }}></button>
