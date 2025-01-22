@@ -2,7 +2,9 @@ body {
   font-family: 'noto sans JP', sans-serif;
 }
 
-.dora {
+.dora, .uraDora {
+  display: inline-block;
+  margin-right: 1rem;
   & button {
     display: inline-block;
     position: relative;
@@ -29,6 +31,10 @@ body {
       font-weight: bold;
     }
   }
+}
+
+.uraDora {
+  visibility: hidden;
 }
 
 .hand {
