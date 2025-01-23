@@ -1,6 +1,5 @@
 import Doras from "./Doras";
-import Discarded from "./Discarded";
-import MyHand from "./MyHand";
+import Game from "./Game";
 import StartForm from "./StartForm";
 import { useState } from "react";
 
@@ -13,8 +12,7 @@ const Table = () => {
   return (
     <>
       {isStarted ? <Doras /> : <StartForm getIsStarted={getIsStarted} />}
-      {isStarted && <Discarded />}
-      {isStarted && <MyHand />}
+      {isStarted && <Game />}
     </>
   );
 };
